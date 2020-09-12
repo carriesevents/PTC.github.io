@@ -1,0 +1,51 @@
+
+#blade {
+  -webkit-animation: spinblade 2s infinite;
+          animation: spinblade 2s infinite;
+}
+#engine_front {
+  -webkit-animation: engineMovement 100ms infinite;
+          animation: engineMovement 100ms infinite;
+}
+#fins {
+  -webkit-animation: engineMovement2 250ms infinite;
+          animation: engineMovement2 250ms infinite;
+}
+@-webkit-keyframes spinblade {
+  /* adding the final value at 50% and 100% means we can          have a pause in between the blade spinning   */
+  50%, 100% {
+    stroke-dashoffset: -90;
+  }
+}
+@keyframes spinblade {
+  /* adding the final value at 50% and 100% means we can          have a pause in between the blade spinning   */
+  50%, 100% {
+    stroke-dashoffset: -90;
+  }
+}
+
+@-webkit-keyframes engineMovement {
+  to {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+
+@keyframes engineMovement {
+  to {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+@-webkit-keyframes engineMovement2 {
+  to {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+}
+@keyframes engineMovement2 {
+  to {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+}
